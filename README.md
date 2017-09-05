@@ -10,7 +10,7 @@ by adding `jiffex` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:jiffex, git: "https://github.com/KosyanMedia/jiffex.git", tag: "0.1"}
+    {:jiffex, git: "git@github.com:KosyanMedia/jiffex.git", tag: "0.1"}
   ]
 end
 ```
