@@ -5,6 +5,8 @@ defmodule Jiffex do
 
   @default_decode_options [:return_maps, :use_nil, :copy_strings]
 
+  defdelegate encode_to_iodata!(content), to: Jiffex, as: :encode!
+
   @doc """
   Decodes `json`, in case of dicts uses `Map`s.
   Returns `{:ok, result}` or `{:error, reason}`
